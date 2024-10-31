@@ -1,4 +1,4 @@
-import express, {Router} from "express";
+import express, {json, Router} from "express";
 const router = express.Router();
 
 const hewan = [
@@ -29,6 +29,7 @@ const hewan = [
 ];
 router.get("/", (req, res) => {
     res.send(hewan);
-
 });
+
+
 export default router;
